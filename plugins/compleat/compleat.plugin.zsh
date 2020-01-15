@@ -13,6 +13,7 @@ if (( ${+commands[compleat]} )); then
     if ! bashcompinit >/dev/null 2>&1; then
       autoload -U bashcompinit
       bashcompinit -i
+      _comp_options+=(globdots) 	# include hidden files
     fi
 
     source "$setup" 

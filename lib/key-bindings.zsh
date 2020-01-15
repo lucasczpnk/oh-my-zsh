@@ -86,7 +86,7 @@ bindkey "^[m" copy-prev-shell-word
 #bindkey '^[e' expand-cmd-path
 #bindkey '^[^I' reverse-menu-complete
 #bindkey '^X^N' accept-and-infer-next-history
-#bindkey '^W' kill-region
+bindkey '^W' kill-region
 #bindkey '^I' complete-word
 ## Fix weird sequence that rxvt produces
 #bindkey -s '^[[Z' '\t'
